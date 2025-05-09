@@ -1,13 +1,25 @@
 
 import React from 'react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import HeroBanner from '@/components/HeroBanner';
+import CategorySection from '@/components/CategorySection';
+import FeaturedProducts from '@/components/FeaturedProducts';
+import DeliveryInfo from '@/components/DeliveryInfo';
+import TestimonialSection from '@/components/TestimonialSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold mb-4">Добро пожаловать</h1>
-        <p className="text-gray-600">Здесь будет новая версия сайта</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        <HeroBanner />
+        <CategorySection />
+        <FeaturedProducts />
+        <DeliveryInfo />
+        <TestimonialSection />
+      </main>
+      <Footer />
     </div>
   );
 };
